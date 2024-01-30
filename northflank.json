@@ -136,7 +136,8 @@
                   "deployment": {
                     "docker": {
                       "configType": "default"
-                    }
+                    },
+                    "releaseFlowControlled": true
                   },
                   "name": "prod-migrations",
                   "disabledCI": false,
@@ -173,10 +174,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "addonId": "${refs.db.id}",
-                "keys": []
               }
             ],
             "restrictions": {
