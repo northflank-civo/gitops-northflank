@@ -26,50 +26,6 @@
           "ref": "db"
         },
         {
-          "kind": "SecretGroup",
-          "spec": {
-            "secretType": "environment-arguments",
-            "priority": 10,
-            "secrets": {
-              "variables": {},
-              "files": {}
-            },
-            "name": "prod-secrets",
-            "addonDependencies": [
-              {
-                "addonId": "redis",
-                "keys": [
-                  {
-                    "keyName": "REDIS_MASTER_URL",
-                    "aliases": [
-                      "CONNECTION_STRING"
-                    ]
-                  }
-                ]
-              },
-              {
-                "addonId": "${refs.db.id}",
-                "keys": []
-              }
-            ],
-            "restrictions": {
-              "restricted": true,
-              "nfObjects": [
-                {
-                  "id": "${refs.prod-migrations.id}",
-                  "type": "job"
-                },
-                {
-                  "id": "${refs.prod-web.id}",
-                  "type": "service"
-                }
-              ],
-              "tags": []
-            }
-          },
-          "ref": "prod-secrets"
-        },
-        {
           "kind": "Workflow",
           "spec": {
             "type": "parallel",
@@ -195,6 +151,50 @@
               }
             ]
           }
+        },
+        {
+          "kind": "SecretGroup",
+          "spec": {
+            "secretType": "environment-arguments",
+            "priority": 10,
+            "secrets": {
+              "variables": {},
+              "files": {}
+            },
+            "name": "prod-secrets",
+            "addonDependencies": [
+              {
+                "addonId": "redis",
+                "keys": [
+                  {
+                    "keyName": "REDIS_MASTER_URL",
+                    "aliases": [
+                      "CONNECTION_STRING"
+                    ]
+                  }
+                ]
+              },
+              {
+                "addonId": "${refs.db.id}",
+                "keys": []
+              }
+            ],
+            "restrictions": {
+              "restricted": true,
+              "nfObjects": [
+                {
+                  "id": "${refs.prod-migrations.id}",
+                  "type": "job"
+                },
+                {
+                  "id": "${refs.prod-web.id}",
+                  "type": "service"
+                }
+              ],
+              "tags": []
+            }
+          },
+          "ref": "prod-secrets"
         }
       ]
     }
