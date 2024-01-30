@@ -139,8 +139,7 @@
                       "configType": "customCommand",
                       "customCommand": "yarn migrate"
                     },
-                    "releaseFlowControlled": true,
-                    "internal": {}
+                    "releaseFlowControlled": true
                   },
                   "name": "prod-migrations",
                   "disabledCI": false,
