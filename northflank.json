@@ -94,7 +94,7 @@
                 "kind": "DeploymentService",
                 "spec": {
                   "deployment": {
-                    "instances": 1,
+                    "instances": 2,
                     "docker": {
                       "configType": "default"
                     },
