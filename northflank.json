@@ -164,7 +164,7 @@
             "name": "prod-secrets",
             "addonDependencies": [
               {
-                "addonId": "${refs.db.id}",
+                "addonId": "redis",
                 "keys": [
                   {
                     "keyName": "REDIS_MASTER_URL",
@@ -173,11 +173,24 @@
                     ]
                   }
                 ]
+              },
+              {
+                "addonId": "${refs.db.id}",
+                "keys": []
               }
             ],
             "restrictions": {
-              "restricted": false,
-              "nfObjects": [],
+              "restricted": true,
+              "nfObjects": [
+                {
+                  "id": "${refs.prod-migrations.id}",
+                  "type": "job"
+                },
+                {
+                  "id": "${refs.prod-web.id}",
+                  "type": "service"
+                }
+              ],
               "tags": []
             }
           },
