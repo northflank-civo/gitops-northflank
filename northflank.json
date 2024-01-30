@@ -97,7 +97,8 @@
                     "instances": 1,
                     "docker": {
                       "configType": "default"
-                    }
+                    },
+                    "releaseFlowControlled": true
                   },
                   "runtimeEnvironment": {},
                   "runtimeFiles": {},
@@ -107,7 +108,7 @@
                   "name": "prod-web",
                   "ports": [
                     {
-                      "internalPort": 80,
+                      "internalPort": 3000,
                       "public": true,
                       "protocol": "HTTP",
                       "name": "p01",
@@ -135,9 +136,11 @@
                   },
                   "deployment": {
                     "docker": {
-                      "configType": "default"
+                      "configType": "customCommand",
+                      "customCommand": "yarn migrate"
                     },
-                    "releaseFlowControlled": true
+                    "releaseFlowControlled": true,
+                    "internal": {}
                   },
                   "name": "prod-migrations",
                   "disabledCI": false,
