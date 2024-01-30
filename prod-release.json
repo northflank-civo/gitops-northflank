@@ -23,14 +23,6 @@
                 },
                 "condition": "success",
                 "ref": "build"
-              },
-              {
-                "kind": "AddonBackup",
-                "spec": {
-                  "addonId": "redis",
-                  "backupType": "snapshot"
-                },
-                "condition": "success"
               }
             ]
           }
