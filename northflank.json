@@ -136,8 +136,7 @@
                   "deployment": {
                     "docker": {
                       "configType": "default"
-                    },
-                    "internal": {}
+                    }
                   },
                   "name": "prod-migrations",
                   "disabledCI": false,
