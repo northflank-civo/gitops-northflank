@@ -42,7 +42,7 @@
             "origin": {
               "id": "prod-builder",
               "branch": "master",
-              "build": "${args.build.id}"
+              "build": "${refs.build.id}"
             },
             "target": {
               "id": "prod-migrations",
@@ -64,7 +64,7 @@
             "origin": {
               "id": "prod-builder",
               "branch": "master",
-              "build": "${args.build.id}"
+              "build": "${refs.build.id}"
             },
             "target": {
               "id": "prod-web",
