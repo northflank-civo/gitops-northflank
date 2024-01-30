@@ -53,7 +53,13 @@
         {
           "kind": "JobRun",
           "spec": {
-            "jobId": "prod-migrations"
+            "jobId": "prod-migrations",
+            "deployment": {
+              "docker": {
+                "configType": "customCommand",
+                "customCommand": "yarn migrate"
+              }
+            }
           },
           "condition": "success"
         },
