@@ -37,14 +37,17 @@
     - Create preview environment via pipeline
       
       ![Add Preview Env](./screenshots/preview-env-1-add.png)
-    - Copy the JSON fconfig from [`./preview-env.json`](./preview-env.json) into the code editor
+    - Copy the JSON config from [`./preview-env.json`](./preview-env.json) into the code editor
       
       ![Add Preview Env 2](./screenshots/preview-env-2-code.png)
-      
-6. Create a PR
+    - Create a git trigger with Trigger reference “git-trigger”  under Preview > Settings tab for the webapp repository
+    
+      ![Add Preview Env 2](./screenshots/preview-env-3-triggers.png)  
+6. Create a PR and preview environment
+    - Make a modification to your `webapp-with-redis` repository and create PR on GitHub
     - Preview environment
     - Merge PR to show fully end-to-end lifecycle management
-7. Optional todos after:
+8. Optional todos after:
     - Invite colleagues for multiplayer DevOps
     - Customize template with new micro-services and databases
     - Setup billing or use free developer tier
