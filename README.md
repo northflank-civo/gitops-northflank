@@ -20,9 +20,10 @@
         - Enable GitOps and select the GitHub repository `gitops-northflank`
         - Set template to create a project
         - Select Bring your Own Cloud and the Civo cluster we just created
-        - Update the repositories in the template for the build services
+        - Update the repositories in the template for the build services (`prod-builder` and `preview-builder`)
+    - Run the template
 5. Create pipeline
-    - Add services to the production step
+    - Add the `prod-web` service and the `redis` addon to the production stage
     - Add release flow via GitOps
     - Create preview environment via pipeline
 6. Create a PR
