@@ -18,7 +18,8 @@
     - Create a template for production
         - https://app.northflank.com/s/account/templates
         - Enable GitOps and select the GitHub repository `gitops-northflank`
-        - Set template to create a project on the BYOC cluster
+        - Set template to create a project
+        - Select Bring your Own Cloud and the Civo cluster we just created
         - Update the repositories in the template for the build services
 5. Create pipeline
     - Add services to the production step
