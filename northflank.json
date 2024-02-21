@@ -201,7 +201,11 @@
   "name": "civo-production",
   "description": "",
   "project": {
-    "id": "demo"
+    "spec": {
+      "name": "new",
+      "clusterId": "scenic-pot",
+      "description": ""
+    }
   },
   "$schema": "https://api.northflank.com/v1/schemas/template"
 }
