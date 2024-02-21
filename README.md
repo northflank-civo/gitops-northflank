@@ -9,6 +9,7 @@
 2. Create BYOC Cluster for Civo
     - Generate Civo API Key https://dashboard.civo.com/security
     - https://app.northflank.com/s/account/cloud/clusters/new/civo
+    - Make sure to use 3 `Large - Standard (g4s.kube.large)` nodes
 3. Create two repositories
     - Application repository 
         - https://github.com/northflank-civo/webapp-with-redis
