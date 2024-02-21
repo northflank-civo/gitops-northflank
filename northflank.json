@@ -13,7 +13,7 @@
               "replicas": 1,
               "storage": 8192,
               "storageClass": "ssd",
-              "deploymentPlan": "nf-compute-100-2"
+              "deploymentPlan": "nf-compute-50"
             },
             "typeSpecificSettings": {},
             "type": "redis",
@@ -36,7 +36,7 @@
                   "buildArguments": {},
                   "buildFiles": {},
                   "billing": {
-                    "deploymentPlan": "nf-compute-10"
+                    "buildPlan": "nf-compute-400-16"
                   },
                   "name": "prod-builder",
                   "vcsData": {
@@ -66,7 +66,7 @@
                   "buildArguments": {},
                   "buildFiles": {},
                   "billing": {
-                    "deploymentPlan": "nf-compute-10"
+                    "buildPlan": "nf-compute-400-16"
                   },
                   "name": "preview-builder",
                   "vcsData": {
@@ -103,7 +103,7 @@
                   "runtimeEnvironment": {},
                   "runtimeFiles": {},
                   "billing": {
-                    "deploymentPlan": "nf-compute-100-2"
+                    "deploymentPlan": "nf-compute-50"
                   },
                   "name": "prod-web",
                   "ports": [
@@ -132,7 +132,7 @@
                   "runtimeEnvironment": {},
                   "runtimeFiles": {},
                   "billing": {
-                    "deploymentPlan": "nf-compute-100-2"
+                    "deploymentPlan": "nf-compute-50"
                   },
                   "deployment": {
                     "docker": {
