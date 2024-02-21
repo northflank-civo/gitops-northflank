@@ -41,7 +41,6 @@
                   "name": "prod-builder",
                   "vcsData": {
                     "projectType": "github",
-                    "vcsLinkId": "65b77831aa5ec1e7f0374197",
                     "projectUrl": "https://github.com/northflank-civo/webapp-with-redis"
                   },
                   "buildConfiguration": {
@@ -71,7 +70,6 @@
                   "name": "preview-builder",
                   "vcsData": {
                     "projectType": "github",
-                    "vcsLinkId": "65b77831aa5ec1e7f0374197",
                     "projectUrl": "https://github.com/northflank-civo/webapp-with-redis"
                   },
                   "buildConfiguration": {
@@ -202,8 +200,7 @@
   "description": "",
   "project": {
     "spec": {
-      "name": "new",
-      "clusterId": "scenic-pot",
+      "name": "Civo Workshop",
       "description": ""
     }
   },
