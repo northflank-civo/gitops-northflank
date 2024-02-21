@@ -17,7 +17,7 @@
     - https://app.northflank.com/s/account/integrations/vcs
     - Create a template for production
         - https://app.northflank.com/s/account/templates
-        - Link template to GitHub repository
+        - Enable GitOps and select the GitHub repository `gitops-northflank`
         - Set template to create a project on the BYOC cluster
         - Update the repositories in the template for the build services
 5. Create pipeline
