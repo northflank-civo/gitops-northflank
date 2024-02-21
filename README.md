@@ -35,6 +35,12 @@
       ![Release Flow Configuration](./screenshots/pipeline-4-release-flow-config.png)
     - Run the release flow
     - Create preview environment via pipeline
+      
+      ![Add Preview Env](./screenshots/preview-env-1-add.png)
+    - Copy the JSON fconfig from [`./preview-env.json`](./preview-env.json) into the code editor
+      
+      ![Add Preview Env 2](./screenshots/preview-env-2-code.png)
+      
 6. Create a PR
     - Preview environment
     - Merge PR to show fully end-to-end lifecycle management
