@@ -24,6 +24,7 @@
         - Select Bring your Own Cloud and the Civo cluster we just created
           ![Added Services](./screenshots/template-2-byoc.png)
         - Update the repositories in the template for the build services (`prod-builder` and `preview-builder`)
+          ![Added Services](./screenshots/template-3-builders.png)
     - Run the template
 5. Create pipeline
     - Add the `prod-web` service and the `redis` addon to the production stage
