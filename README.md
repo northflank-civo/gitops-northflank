@@ -33,6 +33,7 @@
     - Configure the release flow to use GitOps
 
       ![Release Flow Configuration](./screenshots/pipeline-4-release-flow-config.png)
+    - Run the release flow
     - Create preview environment via pipeline
 6. Create a PR
     - Preview environment
