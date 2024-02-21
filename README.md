@@ -1,5 +1,6 @@
 1. Setup accounts (5 minutes)
     - Create a Northflank account
+        - https://app.northflank.com/signup 
         - Select Developer sandbox plan on team creation
         - Navigate to https://app.northflank.com/s/account/billing/claim-coupon and enter coupon AUSNAV-WS
         - no payment information required for Workshop
