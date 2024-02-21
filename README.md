@@ -24,7 +24,15 @@
     - Run the template
 5. Create pipeline
     - Add the `prod-web` service and the `redis` addon to the production stage
-    - Add release flow via GitOps
+      
+      ![Add Services](./screenshots/pipeline-1-add-services.png)
+      ![Added Services](./screenshots/pipeline-2-with-services.png)
+    - Add release flow ton the production stage
+
+      ![Add Release Flow](./screenshots/pipeline-3-add-release-flow.png)
+    - Configure the release flow to use GitOps
+
+      ![Release Flow Configuration](./screenshots/pipeline-4-release-flow-config.png)
     - Create preview environment via pipeline
 6. Create a PR
     - Preview environment
