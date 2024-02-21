@@ -18,8 +18,11 @@
     - Create a template for production
         - https://app.northflank.com/s/account/templates
         - Enable GitOps and select the GitHub repository `gitops-northflank`
+        
+          ![Added Services](./screenshots/template-1-gitops.png)
         - Set template to create a project
         - Select Bring your Own Cloud and the Civo cluster we just created
+          ![Added Services](./screenshots/template-2-byoc.png)
         - Update the repositories in the template for the build services (`prod-builder` and `preview-builder`)
     - Run the template
 5. Create pipeline
